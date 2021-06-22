@@ -1,0 +1,101 @@
+@import '../../../assets/variables';
+
+#establishment-list {
+
+    padding-top: 64px;
+
+    .header {
+        margin-bottom: 60px;
+
+        .title {
+            font-size: 30px;
+            font-family: Mulish;
+            font-weight: bold;
+            color: $black_text;
+        }
+        
+        .more {
+            font-size: 18px;
+            font-family: Mulish;
+            color: $black_text;
+            float: right;
+            background: none;
+            border: none;
+        }
+
+        .filters {
+            width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+
+            .search {
+                border-radius: 8px;
+                padding-left: 5px;
+                padding-right: 20px;
+                font-family: Mulish;
+                border: solid 2px $black_text;
+                min-width: 300px;
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .icone-procurar {
+                position: absolute;
+                width: 13px;
+                right: 5px;
+                top: 15px;
+            }
+
+            @media(max-width: 767px) {
+                .search {
+                    margin-top: 10px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .establishment {
+        font-family: Mulish;
+        margin-bottom: 40px;
+        cursor: pointer;
+
+        .img-establishment {
+            width: 100%;
+            min-height: 180px;
+            margin-bottom: 16px;
+        }
+
+        @media (min-width: 992px) {
+            .img-establishment {
+                min-height: 255px;
+            }
+        }
+        
+        .name {
+            font-size: 16px;
+        }
+        
+        .address {
+            font-size: 14px;
+            color: $light_gray;
+        }
+        
+        .capacity {
+            font-size: 14px;
+            color: $light_gray;
+        }
+
+    }
+
+    .not-found {
+        text-align: center;
+        padding: 120px 0;
+        font-size: 24px;
+        font-family: Mulish;
+    }
+
+}
